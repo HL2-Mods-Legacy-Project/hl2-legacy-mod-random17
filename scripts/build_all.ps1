@@ -1,12 +1,11 @@
 & "$PSScriptRoot\..\gitmodules\mod-installer\build_all.ps1" `
-  -Version "<version>" `
+  -Version "2.0.0" `
   -PreReleaseVersion "beta.1" `
-  -OutputFilePrefix "<output file prefix>" `
-  -ModName "<mod name>" `
-  -ModFolder "<mod folder>" `
-  -AdditionalModFolders @() `
+  -OutputFilePrefix "Random17_20110910" `
+  -ModName "Random 17" `
+  -ModFolder "random17" `
   -ModFilesPath "$PSScriptRoot\..\game" `
-  -ModBaseFilesUrl "<url to mod base files zip>" `
-  -ModBaseFilesUrlHash "<mod base files zip sha256>" `
-  -ModReadmePath "<mod readme path>" `
+  -ModBaseFilesUrl "https://github.com/HL2-Mods-Legacy-Project/hl2-legacy-registry/releases/download/random17/Random17-20110910-Original.zip" `
+  -ModBaseFilesUrlHash "4e57e26191c13a7677fbd452f783c449b770b274853cb218b27b16772ce78b43" `
+  -ModReadmePath "readme.txt" `
   -PublishPath "$PSScriptRoot\..\artifacts\publish"
